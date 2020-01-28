@@ -2,8 +2,8 @@ import React from "react";
 
 import "./custom-button.styles.scss";
 
-const CustomButton = ({ children, otherProps }) => (
-  <button className="custom-button" {...otherProps}>
+const CustomButton = ({ children, onClick, otherProps }) => (
+  <button className="custom-button" onClick={onClick} {...otherProps}>
     {children}
   </button>
 );
